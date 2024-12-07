@@ -1,0 +1,105 @@
+<!doctype html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<html lang="ru-RU">
+<head>
+  <title>Вход</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <script src="https://kit.fontawesome.com/d06d1e0a33.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="snow/snowfall.jquery.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body class="body">
+
+  
+
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<div class="section">
+  <div class="container">
+    <div class="row full-height justify-content-center">
+      <div class="col-12 text-center align-self-center py-5">
+        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+          <h6 class="mb-0 pb-3"><span>Вход </span><span>Регистрация</span></h6>
+                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                <label for="reg-log"></label>
+          <div class="card-3d-wrap mx-auto">
+            <div class="card-3d-wrapper">
+              <div class="card-front">
+                <div class="center-wrap">
+                  <div class="section text-center">
+                    <h4 class="mb-4 pb-3">Вход</h4>
+                    <div class="form-group">
+                      <input type="email" class="form-style" placeholder="Почта">
+                      <i class="input-icon uil uil-at"></i>
+                    </div>	
+                    <div class="form-group mt-2">
+                      <input type="password" class="form-style" placeholder="Повторите пароль" id="passwordInput1">
+                      <i class="input-icon uil uil-lock-alt"></i>
+                      <span class="password-toggle" onclick="togglePassword('passwordInput1', this)"><i class="fa-solid fa-lock fa-xl"></i></span>
+                  </div>
+                    <a href="#" class="btn mt-4">Войти</a>
+                    <p class="mb-0 mt-4 text-center"><a href="#" class="link">Забыли свой пароль?</a></p>
+                    <a href="../index.html" class="button-home">На главную</a>
+                      </div>
+                    </div>
+                  </div>
+              <div class="card-back">
+                <div class="center-wrap">
+                  <div class="section text-center">
+                    <h4 class="mb-3 pb-3">Регистрация</h4>
+                    <div class="form-group">
+                      <input type="text" class="form-style" placeholder="Имя пользователя">
+                      <i class="input-icon uil uil-user"></i>
+                    </div>		
+                    <div class="form-group mt-2">
+                      <input type="email" class="form-style" placeholder="Почта">
+                      <i class="input-icon uil uil-at"></i>
+                    </div>
+                    <div class="form-group mt-2">
+                      <input type="password" class="form-style" placeholder="Придумайте пароль" id="passwordInput2">
+                      <i class="input-icon uil uil-lock-alt"></i>
+                      <span class="password-toggle" onclick="togglePassword('passwordInput2', this)"><i class="fa-solid fa-lock fa-xl"></i></span>
+                  </div>
+                  <div class="form-group mt-2">
+                      <input type="password" class="form-style" placeholder="Повторите пароль" id="passwordInput3">
+                      <i class="input-icon uil uil-lock-alt"></i>
+                      <span class="password-toggle" onclick="togglePassword('passwordInput3', this)"><i class="fa-solid fa-lock fa-xl"></i></span>
+                  </div>
+                    <a href="#" class="btn mt-4">Зарегистрироваться</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="half-circle-container">
+  <div class="half-circle-1"></div>
+</div>
+<div class="slider-thumb-container">
+<div class="slider-thumb-one"></div> 
+<div class="slider-thumb-two"></div>
+</div>
+<script>
+  function togglePassword(inputId, toggleButton) {
+      const passwordInput = document.getElementById(inputId);
+
+      if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          toggleButton.innerHTML = '<i class="fa-solid fa-unlock fa-xl"></i>';
+      } else {
+          passwordInput.type = 'password';
+          toggleButton.innerHTML = '<i class="fa-solid fa-lock fa-xl"></i>';
+      }
+  }
+</script>
+
+</body>
+</html>
